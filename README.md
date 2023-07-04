@@ -12,5 +12,5 @@
   + deleteEmploy method: This method handles a DELETE request to "/employee/{theId}" and deletes an employee by their ID. It first retrieves the employee from the employeeService and throws a RuntimeException if the employee is not found. Then, it calls the delete method on the employeeService to delete the employee. It returns a message indicating the deleted employee ID.
 - After testing the functionality, I add the exception handling classes in the exception package.
   + The First, I create the StudentErrorResponse class. In this class, I create corresponding fields: status (int), message (String), and timestamp (long).
-  + The Second, I created StudentNotFoundException class and extended with RuntimeException. In this class, I have Genare Constructors from Superclass and initialize three constructors.
+  + The Second, I created StudentNotFoundException class and extended with RuntimeException. In this class, I have Genare Constructors from Superclass and initialized three constructors.
   + The Third, I create a StudentRestExceptionHandler class and use the @RestControllerAdvice annotation. In this class, I have created two methods. One method to handle the message not found and one to handle the input character.
